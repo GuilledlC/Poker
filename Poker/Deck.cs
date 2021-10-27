@@ -6,7 +6,7 @@ namespace Poker
 {
 	class Deck
 	{
-		List<Card> deck = new List<Card>();
+		private List<Card> deck = new List<Card>();
 
 		public Deck()
 		{
@@ -62,6 +62,40 @@ namespace Poker
 			deck.Add(new Card(Suits.Spades, 11));
 			deck.Add(new Card(Suits.Spades, 12));
 			deck.Add(new Card(Suits.Spades, 13));
+		}
+
+		public void Shuffle()
+		{
+			long seed = DateTime.Now.Ticks;
+			Random rng = new Random((int)seed);
+			int n = deck.Count;
+			while(n > 1)
+			{
+				n--;
+				int k = rng.Next(n + 1);
+				Card current = deck[k];
+				deck[k] = deck[n];
+				deck[n] = current;
+			}
+		} //Using the Fisher-Yates Shuffle
+
+		public void Print()
+		{
+			foreach(Card c in deck)
+				Console.Write(c.Show() + ", ");
+			Console.WriteLine();
+		}
+
+		public Card Give()
+		{
+			Card given = deck[0];
+			deck.Remove(given);
+			return given;
+		}
+
+		public void Take(Card taken)
+		{
+			deck.Add(taken);
 		}
 	}
 }
