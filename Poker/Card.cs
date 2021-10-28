@@ -62,6 +62,7 @@ namespace Poker
 
 		public void PrintSuit()
 		{
+			Console.Write(" ");
 			Console.BackgroundColor = ConsoleColor.White;
 			if (Suit == Suits.Diamonds || Suit == Suits.Hearts)
 				Console.ForegroundColor = ConsoleColor.Red;
@@ -78,11 +79,11 @@ namespace Poker
 				Console.Write("♠  ");
 			Console.BackgroundColor = ConsoleColor.Black;
 			Console.ForegroundColor = ConsoleColor.White;
-			Console.Write(" ");
 		}
 
 		public void PrintRank()
 		{
+			Console.Write(" ");
 			Console.BackgroundColor = ConsoleColor.White;
 			if (Suit == Suits.Diamonds || Suit == Suits.Hearts)
 				Console.ForegroundColor = ConsoleColor.Red;
@@ -103,7 +104,14 @@ namespace Poker
 				Console.Write(" " + Rank + " ");
 			Console.BackgroundColor = ConsoleColor.Black;
 			Console.ForegroundColor = ConsoleColor.White;
+		}
+
+		public static void PrintBack()
+		{
 			Console.Write(" ");
+			Console.BackgroundColor = ConsoleColor.Cyan;
+			Console.Write("   ");
+			Console.BackgroundColor = ConsoleColor.Black;
 		}
 	}
 }

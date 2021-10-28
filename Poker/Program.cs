@@ -32,6 +32,10 @@ namespace Poker
 			Console.BackgroundColor = ConsoleColor.Black;*/
 
 			TexasHoldEm tx = new TexasHoldEm();
+			Player Guille = new Player("Guille", 1000);
+			Player Miguel = new Player("Miguel", 1000);
+			tx.AddPlayer(Guille);
+			//tx.AddPlayer(Miguel);
 			tx.GameLoop();
 		}
 	}
