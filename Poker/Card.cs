@@ -24,7 +24,7 @@ namespace Poker
 		public Card(Suits suit, int rank)
 		{
 			_suit = (Suits)((int)suit % 4);
-			_rank = ((rank - 1) % 13) + 1;;
+			_rank = (rank % 13) + 2;
 		}
 
 		public string Show()
@@ -33,7 +33,7 @@ namespace Poker
 
 			switch (Rank)
 			{
-				case 1:
+				case 14:
 					card = "Ace";
 					break;
 				case 2:
@@ -90,7 +90,7 @@ namespace Poker
 			else
 				Console.ForegroundColor = ConsoleColor.Black;
 
-			if (Rank == 1)
+			if (Rank == 14)
 				Console.Write(" A ");
 			else if (Rank == 10)
 				Console.Write("10 ");

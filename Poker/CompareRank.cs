@@ -11,9 +11,9 @@ namespace Poker
 		{
 			if (x == null || y == null)
 				return Comparer<Card>.Default.Compare(x, y);
-			else if (x.Rank == 1 && y.Rank == 12)
+			else if (x.Rank == 2 && y.Rank == 14)
 				return 1;
-			else if (x.Rank == 12 && y.Rank == 1)
+			else if (x.Rank == 14 && y.Rank == 2)
 				return -1;
 			else
 				return x.Rank - y.Rank;

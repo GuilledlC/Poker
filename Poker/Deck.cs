@@ -10,7 +10,7 @@ namespace Poker
 
 		public Deck()
 		{
-			deck.Add(new Card(Suits.Clubs, 1));
+			deck.Add(new Card(Suits.Clubs, 14));
 			deck.Add(new Card(Suits.Clubs, 2));
 			deck.Add(new Card(Suits.Clubs, 3));
 			deck.Add(new Card(Suits.Clubs, 4));
@@ -23,7 +23,7 @@ namespace Poker
 			deck.Add(new Card(Suits.Clubs, 11));
 			deck.Add(new Card(Suits.Clubs, 12));
 			deck.Add(new Card(Suits.Clubs, 13));
-			deck.Add(new Card(Suits.Diamonds, 1));
+			deck.Add(new Card(Suits.Diamonds, 14));
 			deck.Add(new Card(Suits.Diamonds, 2));
 			deck.Add(new Card(Suits.Diamonds, 3));
 			deck.Add(new Card(Suits.Diamonds, 4));
@@ -36,7 +36,7 @@ namespace Poker
 			deck.Add(new Card(Suits.Diamonds, 11));
 			deck.Add(new Card(Suits.Diamonds, 12));
 			deck.Add(new Card(Suits.Diamonds, 13));
-			deck.Add(new Card(Suits.Hearts, 1));
+			deck.Add(new Card(Suits.Hearts, 14));
 			deck.Add(new Card(Suits.Hearts, 2));
 			deck.Add(new Card(Suits.Hearts, 3));
 			deck.Add(new Card(Suits.Hearts, 4));
@@ -49,7 +49,7 @@ namespace Poker
 			deck.Add(new Card(Suits.Hearts, 11));
 			deck.Add(new Card(Suits.Hearts, 12));
 			deck.Add(new Card(Suits.Hearts, 13));
-			deck.Add(new Card(Suits.Spades, 1));
+			deck.Add(new Card(Suits.Spades, 14));
 			deck.Add(new Card(Suits.Spades, 2));
 			deck.Add(new Card(Suits.Spades, 3));
 			deck.Add(new Card(Suits.Spades, 4));

@@ -24,7 +24,7 @@ namespace Poker
 			_holeCards.Add(null); //card. Subject to change
 		}
 
-		public void GetCards(Card holeCard1, Card holeCard2)
+		public void TakeCards(Card holeCard1, Card holeCard2)
 		{
 			if (holeCard1 == null || holeCard2 == null)
 				throw new ArgumentNullException();
