@@ -44,5 +44,10 @@ namespace Poker
 			_holeCards.Clear();
 			return aux;
 		}
+
+		public void GiveChips(uint chips)
+		{
+			_chips += chips;
+		}
 	}
 }

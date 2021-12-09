@@ -24,7 +24,7 @@ namespace Poker
 		public Card(Suits suit, int rank)
 		{
 			_suit = (Suits)((int)suit % 4);
-			_rank = (rank % 13) + 2;
+			_rank = ((rank - 2) % 13) + 2;
 		}
 
 		public string Show()

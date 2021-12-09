@@ -14,6 +14,8 @@ namespace Poker
 		/*[STAThread]*/
 		static void Main()
 		{
+			Card c1 = new Card(Suits.Clubs, 12);
+			Console.WriteLine(c1.Show() + c1.Rank);
 			/*Application.SetHighDpiMode(HighDpiMode.SystemAware);
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
