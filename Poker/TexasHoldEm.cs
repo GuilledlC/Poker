@@ -163,6 +163,7 @@ namespace Poker
 					{
 						winners.Add(p);
 						winningHands.Add(aux);
+						Console.WriteLine(hv.Method);
 					}
 					checking.RemoveRange(checking.Count - 2, 2);
 				}
@@ -419,7 +420,7 @@ namespace Poker
 				for (int j = 3; j >= 0; j--)
 				{
 					if (compRank.Compare(checking[i + j + 1], checking[i + j]) != 1
-						&& compSuit.Compare(checking[i + j + 1], checking[i + j]) != 0)
+						|| compSuit.Compare(checking[i + j + 1], checking[i + j]) != 0)
 					{
 						straightFlushHand.Clear();
 						break;
